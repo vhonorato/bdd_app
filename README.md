@@ -29,7 +29,7 @@ Esta é uma aplicação desenvolvida em Dart através do framework Flutter para 
 
 ## Running Using Flutter Driver
 
-Dentro da diretorio raiz do projeto execute o comando a seguir e veja a mágica acontecer.
+Dentro da diretório raiz do projeto execute o comando a seguir e veja a mágica acontecer:
 
 ```
 flutter drive \
@@ -37,7 +37,20 @@ flutter drive \
   --target=integration_test/app_test.dart
 ```
 
-## Running Using Flutter Driver
+## Running in Chrome
 
-Em breve.
+Primeiro, baixe o [ChromeDriver](https://chromedriver.chromium.org/downloads) compatível com sua versão do navegador Chrome e extraia-o em um diretório de sua escolha. Em seguida execute o ChromeDriver na porta 4444:
 
+```
+chromedriver --port=4444
+```
+
+Num processo separado, execute o flutter_drive:
+
+```
+flutter drive \
+  --driver=test_driver/integration_test.dart \
+  --target=integration_test/counter_test.dart \
+  -d web-server
+
+```
