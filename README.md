@@ -49,7 +49,7 @@ Num processo separado, execute o flutter_drive:
 
 ```
 flutter drive \
-  --driver=test_driver/integration_test.dart \
+  --driver=test_driver/integration_driver.dart \
   --target=integration_test/app_test.dart \
   -d web-server
 
