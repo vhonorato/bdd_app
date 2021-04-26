@@ -34,7 +34,7 @@ Dentro da diretório raiz do projeto execute o comando a seguir e veja a mágica
 ```
 flutter drive \
   --driver=test_driver/integration_driver.dart \
-  --target=integration_test/app_test.dart
+  --target=test/app_test.dart
 ```
 
 ## Running in Chrome
@@ -50,7 +50,7 @@ Num processo separado, execute o flutter_drive:
 ```
 flutter drive \
   --driver=test_driver/integration_driver.dart \
-  --target=integration_test/app_test.dart \
+  --target=test/app_test.dart \
   -d web-server
 
 ```
